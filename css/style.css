@@ -2,23 +2,29 @@ body {
   background: purple;
   font-family: helvetica, sans-serif;
   margin: 0 auto;
-  max-width: 600px;
 }
 
 h1 {
   font-family: 'Grandstander', cursive;
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   color: white;
-  margin: 20px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 h2 {
   font-family: 'Grandstander', cursive;
   text-align: center;
+  font-size: 40px;
+  color: white;
+  margin: 0 0 10px 0;
+}
+
+h3 {
+  text-align: center;
   font-size: 20px;
   color: white;
-  margin: 0 0 20px 0;
+  margin: 10px 0 20px 0;
 }
 
 /* Header */
@@ -33,7 +39,7 @@ h2 {
 img {
   position: center;
   height: 200px;
-  padding: 20px;
+  padding: 10px;
   width: 200px;
 }
 
