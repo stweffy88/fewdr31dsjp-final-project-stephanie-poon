@@ -7,6 +7,10 @@ header {
   margin: 50px;
 }
 
+a:hover {
+  background-color: #B0E0E6;
+}
+
 /* Off-canvas menu */
 .controls {
   position: absolute;
@@ -116,22 +120,24 @@ p {
 }
 
 .content-creation-tool {
+  color: white;
   float: right;
+  text-decoration: none;
 }
 
 .first-example{
   background-image: url("https://i.imgur.com/Hb1oWaI.png");
-  width: 100vw;
+  max-width: 100%;
 }
 
 .second-example{
   background-image: url("https://i.imgur.com/UmlS5gv.png");
-  width: 100vw;
+  max-width: 100%;
 }
 
 .third-example{
   background-image: url("https://i.imgur.com/mPT2hUo.jpg");
-  width: 100vw;
+  max-width: 100%;
 }
 
 /* Mobile first responsive design */
