@@ -104,10 +104,11 @@ div {
 }
 
 h4 {
-  border-radius: 12px 12px 0 0;
-  font-size: 20px;
   background: black;
+  border-radius: 12px 12px 0 0;
   color: white;
+  font-size: 20px;
+  height: 30px;
   padding: 10px;
   text-align: justify;
 }
@@ -167,10 +168,10 @@ p {
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
