@@ -1,17 +1,87 @@
 body {
-  background: darkorchid;
+  background: #663399;
   font-family: helvetica, sans-serif;
-  margin: 0 auto;
 }
 
+header {
+  margin: 50px;
+}
+/* Off-canvas menu */
+
+.controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-control {
+  fill: #white;
+  height: 50px;
+  width: 50px;
+  position: right;
+  padding: 10px 10px 0 0;
+}
+
+.menu {
+  background-color: indigo;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  transition: all 0.35s ease-in-out;
+  transform: translateX(100%);
+  z-index: 10;
+}
+
+.menu-open {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.menu a {
+  color: white;
+  display: block;
+  font-size: 30px;
+  margin: 25px auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Introduction */
 h1 {
   font-family: 'Grandstander', cursive;
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   color: white;
-  margin: 40px 0 0 0;
+
 }
 
+ul {
+  list-style: none;
+  color: white;
+  line-height: 25px;
+}
+
+/* Header */
+
+.introduction {
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  padding: 10px;
+  height: 250px;
+}
+
+.introduction img {
+  position: center;
+  height: 200px;
+  padding: 10px;
+  width: 200px;
+}
+
+/* Examples of my work */
 h2 {
   font-family: 'Grandstander', cursive;
   text-align: center;
@@ -24,38 +94,23 @@ h3 {
   text-align: center;
   font-size: 20px;
   color: white;
-  margin: 10px 0 20px 0;
-}
-
-/* Header */
-
-.introduction {
-  align-items: flex-start;
-  display: flex;
-  justify-content: flex-start;
-  margin: 20px;
-}
-
-img {
-  position: center;
-  height: 200px;
-  padding: 10px;
-  width: 200px;
+  font-weight: lighter;
+  margin: 10px 0 10px 0;
 }
 
 div {
   height: 500px;
   background-size: cover;
   position: relative;
-  margin: 40px 0 0 0;
+  margin: 10px 0 30px 0;
   border-radius: 12px;
 }
 
 p {
   font-style: bold;
-  color: rgba(255,255,255,1);
+  color: white;
   background: black;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: linear-gradient(bottom, black, rgba(0,0,0,.4));
   padding: 10px;
   line-height: 28px;
   text-align: justify;
@@ -66,95 +121,46 @@ p {
   transition: height .5s;
 }
 
-small {
-  opacity: 0;
-}
 
-.show-description p {
-  height: 150px;
-}
 
-.show-description small {
-  opacity: 1;
-}
-
-.first{
+.first-example{
   background-image: url("https://i.imgur.com/Hb1oWaI.png");
+  max-width: 100%;
 }
 
-.second{
-  background-image: url("https://i.imgur.com/NW9ETBM.png?1");
+.second-example{
+  background-image: url("https://i.imgur.com/UmlS5gv.png");
+  max-width: 100%;
 }
 
-.third{
+.third-example{
   background-image: url("https://i.imgur.com/mPT2hUo.jpg");
+  max-width: 100%;
 }
 
-.type {
+.content-creation-tool {
   float: right;
-}
-
-/* Off-canvas menu */
-
-.controls {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.menu-control {
-  fill: #white;
-  margin: 25px;
-  height: 50px;
-  width: 50px;
-  position: right;
-  padding: 10px;
-}
-
-.menu {
-  background-color: rgba(7,34,53,1);
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  opacity: 0;
-  overflow-y: scroll;
-  padding: 15px 30px;
-  position: fixed;
-  transition: all 0.35s ease-in-out;
-  transform: translateX(100%);
-  z-index: 10;
-}
-
-.menu-open {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-.menu a, .menu a:focus, .menu a:visited {
-  color: white;
-  display: block;
-  font-size: 50px;
-  margin: 25px auto;
-  text-align: center;
-  text-decoration: none;
-}
-
-.menu-close {
-  background-color: white;
-  color: darkred;
 }
 
 /* Mobile first responsive design */
 @media (max-width: 600px) {
   h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 20px;
     line-height: 40px;
   }
 
+  li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   h2 {
     font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
     margin: 20px 0 30px 0;
   }
 
@@ -163,7 +169,6 @@ small {
   }
 
   p {
-    font-size: 20px;
     line-height: 24px;
   }
 
