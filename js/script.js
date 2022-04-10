@@ -4,6 +4,14 @@ menuController.addEventListener('click', function() {
 });
 
 document.getElementById('menu-close').addEventListener('click', function() {
-  console.log('close anonymous function was clicked');
   document.querySelector('.menu').classList.remove('menu-open');
+});
+
+const revealDescription = document.getElementById('p');
+revealDescription.addEventListener('click', function() {
+  document.querySelector('.small').classList.toggle('show-description');
+});
+
+document.getElementById('p').addEventListener('click', function() {
+  document.querySelector('.small').classList.remove('show-description');
 });
