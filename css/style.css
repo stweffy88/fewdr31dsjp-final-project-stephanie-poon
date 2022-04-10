@@ -6,8 +6,8 @@ body {
 header {
   margin: 50px;
 }
-/* Off-canvas menu */
 
+/* Off-canvas menu */
 .controls {
   position: absolute;
   top: 0;
@@ -16,10 +16,10 @@ header {
 
 .menu-control {
   fill: #white;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   position: right;
-  padding: 10px 10px 0 0;
+  padding: 30px 30px 0 0;
 }
 
 .menu {
@@ -48,19 +48,17 @@ header {
   text-decoration: none;
 }
 
-/* Introduction */
 h1 {
-  font-family: 'Grandstander', cursive;
-  text-align: center;
-  font-size: 50px;
   color: white;
-
+  font-family: 'Grandstander';
+  font-size: 50px;
+  text-align: center;
 }
 
 ul {
-  list-style: none;
   color: white;
   line-height: 25px;
+  list-style: none;
 }
 
 /* Header */
@@ -68,78 +66,72 @@ ul {
 .introduction {
   align-items: flex-start;
   display: flex;
-  justify-content: flex-start;
-  margin: 10px;
-  padding: 10px;
   height: 250px;
+  justify-content: flex-start;
 }
 
 .introduction img {
-  position: center;
   height: 200px;
   padding: 10px;
+  position: center;
   width: 200px;
 }
 
 /* Examples of my work */
 h2 {
-  font-family: 'Grandstander', cursive;
-  text-align: center;
-  font-size: 40px;
   color: white;
-  margin: 0 0 10px 0;
+  font-family: 'Grandstander';
+  font-size: 40px;
+  text-align: center;
 }
 
 h3 {
-  text-align: center;
-  font-size: 20px;
   color: white;
+  font-size: 20px;
   font-weight: lighter;
-  margin: 10px 0 10px 0;
+  text-align: center;
 }
 
 div {
   height: 500px;
   background-size: cover;
   position: relative;
-  margin: 10px 0 30px 0;
   border-radius: 12px;
 }
 
-p {
-  font-style: bold;
-  color: white;
+h4 {
+  border-radius: 12px 12px 0 0;
+  font-size: 20px;
   background: black;
-  background: linear-gradient(bottom, black, rgba(0,0,0,.4));
+  color: white;
   padding: 10px;
-  line-height: 28px;
   text-align: justify;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  height: 30px;
-  transition: height .5s;
 }
 
-
-
-.first-example{
-  background-image: url("https://i.imgur.com/Hb1oWaI.png");
-  max-width: 100%;
-}
-
-.second-example{
-  background-image: url("https://i.imgur.com/UmlS5gv.png");
-  max-width: 100%;
-}
-
-.third-example{
-  background-image: url("https://i.imgur.com/mPT2hUo.jpg");
-  max-width: 100%;
+p {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 20px;
+  padding: 20px;
 }
 
 .content-creation-tool {
   float: right;
+}
+
+.first-example{
+  background-image: url("https://i.imgur.com/Hb1oWaI.png");
+  width: 100vw;
+}
+
+.second-example{
+  background-image: url("https://i.imgur.com/UmlS5gv.png");
+  width: 100vw;
+}
+
+.third-example{
+  background-image: url("https://i.imgur.com/mPT2hUo.jpg");
+  width: 100vw;
 }
 
 /* Mobile first responsive design */
@@ -168,11 +160,11 @@ p {
     margin: 20px 12px 0 12px;
   }
 
-  p {
-    line-height: 24px;
+  h4 {
+    font-size: 18px;
   }
 
-  small {
+  p {
     font-size: 16px;
   }
 }

@@ -1,3 +1,4 @@
+// Opening and closing the hamburger menu
 const menuController = document.getElementById('menu-hamburger');
 menuController.addEventListener('click', function() {
   document.querySelector('.menu').classList.toggle('menu-open');
